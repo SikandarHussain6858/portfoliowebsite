@@ -3,266 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Muhammad Sikandar Hussain — AI, automation, and full-stack software projects.">
-  <title>Portfolio — Muhammad Sikandar Hussain</title>
+  <meta name="description" content="Portfolio — AI, automation, and full-stack projects by Muhammad Sikandar Hussain.">
+  <title>Portfolio — Sikandar Hussain</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ======= NAVIGATION ======= -->
+  <!-- NAV -->
   <nav id="navbar" class="scrolled">
     <div class="container">
-      <a href="index.html" class="logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
-      <ul class="navigation" id="nav-menu">
+      <a href="index.html" class="logo">Sikandar<span>.</span></a>
+      <ul class="nav-links" id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li class="active"><a href="projects.html">Portfolio</a></li>
+        <li><a href="projects.html" class="active">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ======= PAGE HERO ======= -->
+  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="section-label">My Work</span>
-      <h1 class="section-title">Portfolio</h1>
-      <p class="section-subtitle">A collection of AI systems, automation tools, and full-stack applications I've built.</p>
+      <span class="section-label">My work</span>
+      <h1 class="section-heading"><em>Portfolio</em></h1>
+      <p class="section-sub">AI systems, automation tools, and full-stack applications I've built.</p>
 
-      <!-- Filter Tabs -->
-      <div class="filter-tabs">
-        <button class="filter-btn active" id="filter-all" data-filter="all">All Projects</button>
-        <button class="filter-btn" id="filter-ai" data-filter="ai">AI &amp; Automation</button>
-        <button class="filter-btn" id="filter-web" data-filter="web">Web &amp; Backend</button>
-        <button class="filter-btn" id="filter-systems" data-filter="systems">Systems</button>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI & Automation</button>
+        <button class="filter-btn" data-filter="web">Web & Backend</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
       </div>
     </div>
   </section>
 
-  <!-- ======= PROJECTS GRID ======= -->
-  <section class="projects-section">
+  <!-- PROJECTS -->
+  <section class="projects-band">
     <div class="container">
-      <div class="projects-grid" id="projects-grid">
+      <div class="proj-grid" id="proj-grid">
 
-        <!-- Agentic AI Email Manager -->
-        <div class="project-card reveal" data-category="ai">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=600&h=400&fit=crop&q=80"
-                 alt="Agentic AI Email Manager">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal" data-cat="ai">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=600&h=400&fit=crop&q=80" alt="Agentic AI Email Manager">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">AI Automation</span>
-              <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">AI Automation</span>
+              <span class="feat-badge"><i class="fas fa-star"></i> Featured</span>
             </div>
             <h3>Agentic AI Email Manager</h3>
-            <p>An intelligent automated email handling system developed using Python, OpenAI, and LLM orchestration. Autonomously reads, categorises, drafts responses, and manages inbox workflows.</p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag cyan">OpenAI</span>
-              <span class="tag violet">LLM</span>
-              <span class="tag">Automation</span>
+            <p>Intelligent email handling system using Python, OpenAI, and LLM orchestration. Reads, categorises, and drafts responses autonomously.</p>
+            <div class="proj-tags">
+              <span class="ptag">Python</span><span class="ptag">OpenAI</span><span class="ptag">LLM</span>
             </div>
           </div>
         </div>
 
-        <!-- LinkedIn Post Automation -->
-        <div class="project-card reveal reveal-delay-1" data-category="ai">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop&q=80"
-                 alt="LinkedIn Post Automation">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal d1" data-cat="ai">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop&q=80" alt="LinkedIn Post Automation">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">AI Automation</span>
-              <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">AI Automation</span>
+              <span class="feat-badge"><i class="fas fa-star"></i> Featured</span>
             </div>
             <h3>LinkedIn Post Automation</h3>
-            <p>Automated workflow for LinkedIn post generation and scheduling using n8n and Python. AI generates topical content, optimises for engagement, and schedules posts autonomously.</p>
-            <div class="project-tags">
-              <span class="tag cyan">n8n</span>
-              <span class="tag">Python</span>
-              <span class="tag violet">LLM</span>
-              <span class="tag green">Social Media</span>
+            <p>Automated workflow for LinkedIn content generation and scheduling using n8n and Python. AI generates topical content and optimises for engagement.</p>
+            <div class="proj-tags">
+              <span class="ptag">n8n</span><span class="ptag">Python</span><span class="ptag">LLM</span>
             </div>
           </div>
         </div>
 
-        <!-- Remote Patient Monitoring -->
-        <div class="project-card reveal reveal-delay-2" data-category="web">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop&q=80"
-                 alt="Remote Patient Monitoring">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal d2" data-cat="web">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop&q=80" alt="Remote Patient Monitoring">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Full-Stack</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Full-Stack</span>
             </div>
             <h3>Remote Patient Monitoring</h3>
-            <p>Java Spring Boot cloud-based application for real-time patient care monitoring, health data management, and doctor-patient communication. Project Lead role.</p>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag cyan">Spring Boot</span>
-              <span class="tag">MySQL</span>
-              <span class="tag green">Cloud</span>
+            <p>Java Spring Boot cloud application for real-time patient care monitoring and health data management. Led as Project Lead.</p>
+            <div class="proj-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">MySQL</span>
             </div>
           </div>
         </div>
 
-        <!-- MyTutor Platform -->
-        <div class="project-card reveal" data-category="web">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop&q=80"
-                 alt="MyTutor Platform">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal" data-cat="web">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop&q=80" alt="MyTutor Platform">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Web Platform</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Web Platform</span>
             </div>
             <h3>MyTutor Platform</h3>
-            <p>A comprehensive educational marketplace and tutoring platform built using Java Spring Boot. Connects students with tutors, manages bookings, and tracks learning progress.</p>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag cyan">Spring Boot</span>
-              <span class="tag violet">Web</span>
-              <span class="tag">Backend</span>
+            <p>Educational marketplace connecting students with tutors, managing bookings, and tracking learning progress via Java Spring Boot.</p>
+            <div class="proj-tags">
+              <span class="ptag">Java</span><span class="ptag">Web</span><span class="ptag">Backend</span>
             </div>
           </div>
         </div>
 
-        <!-- Mine Escape Game -->
-        <div class="project-card reveal reveal-delay-1" data-category="systems">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&q=80"
-                 alt="Mine Escape Game">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal d1" data-cat="systems">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&q=80" alt="Mine Escape Game">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Systems / Game</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Systems</span>
             </div>
             <h3>Mine Escape Game</h3>
-            <p>A challenging 2D maze-based puzzle game developed in C++ with focus on logic, pathfinding algorithms, and dynamic memory management. Demonstrates strong OOP and algorithm design skills.</p>
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag cyan">Algorithms</span>
-              <span class="tag violet">OOP</span>
-              <span class="tag">Game Dev</span>
+            <p>2D maze puzzle game in C++ focusing on pathfinding algorithms and dynamic memory management. Strong OOP design.</p>
+            <div class="proj-tags">
+              <span class="ptag">C++</span><span class="ptag">Algorithms</span><span class="ptag">OOP</span>
             </div>
           </div>
         </div>
 
-        <!-- Disease Simulator -->
-        <div class="project-card reveal reveal-delay-2" data-category="systems">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&h=400&fit=crop&q=80"
-                 alt="Disease Simulator System">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal d2" data-cat="systems">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&h=400&fit=crop&q=80" alt="Disease Simulator">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Simulation / AI</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Simulation</span>
             </div>
-            <h3>Disease Simulator System</h3>
-            <p>Simulation tool for modelling disease transmission dynamics using statistical models. Calculates management strategies and visualises outbreak trajectories across population datasets.</p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag cyan">Simulation</span>
-              <span class="tag violet">Data Science</span>
-              <span class="tag green">AI</span>
+            <h3>Disease Simulator</h3>
+            <p>Modelling disease transmission dynamics using statistical models. Calculates management strategies and visualises outbreak data.</p>
+            <div class="proj-tags">
+              <span class="ptag">Python</span><span class="ptag">Simulation</span><span class="ptag">Data</span>
             </div>
           </div>
         </div>
 
-        <!-- Secure Social App -->
-        <div class="project-card reveal" data-category="web">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop&q=80"
-                 alt="Secure Social App">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal" data-cat="web">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop&q=80" alt="Secure Social App">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Web / Security</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Security</span>
             </div>
             <h3>Secure Social App</h3>
-            <p>A security-first social media application focusing on user privacy, data encryption, and access control. Built with best practices in application security and backend hardening.</p>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag cyan">Security</span>
-              <span class="tag violet">Social</span>
-              <span class="tag">Web</span>
+            <p>Security-first social media application focusing on user privacy, data encryption, and access control.</p>
+            <div class="proj-tags">
+              <span class="ptag">Java</span><span class="ptag">Security</span><span class="ptag">Web</span>
             </div>
           </div>
         </div>
 
-        <!-- Presentation Hub -->
-        <div class="project-card reveal reveal-delay-1" data-category="web">
-          <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop&q=80"
-                 alt="Presentation Hub">
-            <div class="project-img-overlay">
-              <div class="project-links">
-                <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i> View</a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
-              </div>
+        <div class="proj-card reveal d1" data-cat="web">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop&q=80" alt="Presentation Hub">
+            <div class="proj-thumb-overlay">
+              <a href="https://github.com/SikandarHussain6858" target="_blank"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <span class="project-category">Platform</span>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-cat">Platform</span>
             </div>
             <h3>Presentation Hub</h3>
-            <p>Interactive platform for creating, managing and delivering dynamic digital content and presentations. Built with a focus on real-time collaboration and rich media support.</p>
-            <div class="project-tags">
-              <span class="tag">Web</span>
-              <span class="tag cyan">Interactive</span>
-              <span class="tag violet">Platform</span>
-              <span class="tag green">Dev</span>
+            <p>Interactive platform for creating and delivering dynamic digital content and presentations with collaboration features.</p>
+            <div class="proj-tags">
+              <span class="ptag">Web</span><span class="ptag">Interactive</span><span class="ptag">Platform</span>
             </div>
           </div>
         </div>
@@ -271,24 +206,22 @@
     </div>
   </section>
 
-  <!-- ======= CTA ======= -->
+  <!-- CTA -->
   <section class="cta-band">
     <div class="container reveal">
-      <h2>Have a Project in Mind?</h2>
-      <p>I'd love to hear about it. Let's create something extraordinary together.</p>
-      <a href="contact.html" id="portfolio-cta-btn" class="btn btn-primary">
-        <i class="fas fa-paper-plane"></i> Let's Work Together
-      </a>
+      <h2 class="section-heading">Have a project <em>in mind?</em></h2>
+      <p class="section-sub" style="margin:0 auto 1.75rem;">Let's create something extraordinary together.</p>
+      <a href="contact.html" class="btn btn-fill"><i class="fas fa-paper-plane"></i> Let's work together</a>
     </div>
   </section>
 
-  <!-- ======= FOOTER ======= -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <a href="index.html" class="footer-logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
-        <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
-        <div class="social-links">
+        <span class="footer-logo">Sikandar<span>.</span></span>
+        <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain</p>
+        <div class="footer-socials">
           <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
@@ -298,42 +231,26 @@
   </footer>
 
   <script>
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    const nav = document.getElementById('navbar');
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30));
+    const hb = document.getElementById('hamburger'), mn = document.getElementById('nav-menu');
+    hb.addEventListener('click', () => { hb.classList.toggle('open'); mn.classList.toggle('open'); });
+    mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hb.classList.remove('open'); mn.classList.remove('open'); }));
 
-    const hamburger = document.getElementById('hamburger');
-    const navMenu   = document.getElementById('nav-menu');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open'); navMenu.classList.toggle('open');
-    });
-    navMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
-      hamburger.classList.remove('open'); navMenu.classList.remove('open');
-    }));
+    const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); } }), { threshold:.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-    // Scroll reveal
-    const revealObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
-
-    // Project filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        projectCards.forEach(card => {
-          if (filter === 'all' || card.dataset.category === filter) {
-            card.classList.remove('hidden');
-          } else {
-            card.classList.add('hidden');
-          }
-        });
+    // Filter
+    const btns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.proj-card');
+    btns.forEach(b => b.addEventListener('click', () => {
+      btns.forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const f = b.dataset.filter;
+      cards.forEach(c => {
+        c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f);
       });
-    });
+    }));
   </script>
 
 </body>
