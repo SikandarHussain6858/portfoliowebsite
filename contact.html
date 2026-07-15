@@ -158,7 +158,11 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
+    // Initialize EmailJS (Replace 'YOUR_PUBLIC_KEY' with your actual public key from EmailJS)
+    emailjs.init("YOUR_PUBLIC_KEY");
+
     const nav = document.getElementById('navbar');
     addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30));
     const hb = document.getElementById('hamburger'), mn = document.getElementById('nav-menu');
@@ -171,13 +175,23 @@
     function handleSubmit(e) {
       e.preventDefault();
       const btn = document.querySelector('.btn-submit');
+      const originalText = btn.innerHTML;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
       btn.disabled = true;
-      setTimeout(() => {
-        document.getElementById('form-ok').style.display = 'block';
-        btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-        btn.style.background = 'var(--sage)';
-      }, 1200);
+
+      // Ensure you replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS
+      emailjs.sendForm('service_v84c7es', 'YOUR_TEMPLATE_ID', e.target)
+        .then(() => {
+          document.getElementById('form-ok').style.display = 'block';
+          btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+          btn.style.background = 'var(--sage)';
+          e.target.reset(); // Clear the form
+        }, (error) => {
+          alert('Failed to send the message. Please try again or email me directly.');
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+          console.error("EmailJS Error:", error);
+        });
     }
   </script>
 
