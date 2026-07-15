@@ -1,109 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Sikandar Hussain - Agentic AI Developer</title>
+    <meta name="description"
+        content="Muhammad Sikandar Hussain — Agentic AI Developer and BS Artificial Intelligence student at NUST-SEECS. Building autonomous AI systems and web applications.">
+    <title>Muhammad Sikandar Hussain — Agentic AI Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav>
+
+    <!-- ======= NAVIGATION ======= -->
+    <nav id="navbar">
         <div class="container">
-            <a href="index.html" class="logo">MSH</a>
-            <ul class="navigation">
+            <a href="index.html" class="logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+            <ul class="navigation" id="nav-menu">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="projects.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ======= HERO ======= -->
     <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h3>Hi</h3>
-                    <h1>I am <span class="name">Muhammad Sikandar Hussain</span></h1>
-                    <p>Agentic AI Developer | BS Artificial Intelligence Student at NUST-SEECS | Building Autonomous AI Systems</p>
+
+                <!-- Text -->
+                <div class="hero-text reveal">
+                    <span class="greeting">
+                        <i class="fas fa-circle"
+                            style="font-size:0.5rem; animation: blink 1.5s ease-in-out infinite;"></i>
+                        Available for projects
+                    </span>
+                    <h1>Hi, I'm <span class="name">Muhammad<br>Sikandar Hussain</span></h1>
+                    <div class="hero-typing-wrapper">
+                        <span id="typed-text" class="typed-text"></span><span class="cursor"></span>
+                    </div>
+                    <p class="hero-desc">
+                        Building autonomous AI systems that enhance productivity, automate complex workflows, and turn
+                        ideas into intelligent digital solutions.
+                    </p>
                     <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get in touch →</a>
+                        <a href="projects.html" id="hero-portfolio-btn" class="btn btn-primary">
+                            <i class="fas fa-folder-open"></i> View My Work
+                        </a>
+                        <a href="contact.html" id="hero-contact-btn" class="btn btn-ghost">
+                            <i class="fas fa-paper-plane"></i> Let's Talk
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="hero-stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">AI Projects</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number" data-target="315" data-suffix="">3.15</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number" data-target="2028">0</span>
+                            <span class="stat-label">Graduation</span>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                    <img src="IMG-20241215-WA0146.jpg" 
-                         alt="Muhammad Sikandar Hussain" class="profile-img">
+
+                <!-- Image -->
+                <div class="hero-image reveal reveal-delay-2">
+                    <div class="profile-frame">
+                        <div class="profile-ring"></div>
+                        <div class="profile-dot"></div>
+                        <img src="ChatGPT Image Jun 29, 2026, 01_24_03 PM.png" alt="Muhammad Sikandar Hussain"
+                            class="profile-img">
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-icon">🎓</span>
+                        <div class="badge-text">
+                            <strong>NUST — SEECS</strong>
+                            BS Artificial Intelligence
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="about-section">
+    <!-- ======= ABOUT PREVIEW ======= -->
+    <section class="about-preview">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Agentic AI Developer passionate about building autonomous AI systems that enhance productivity and automate complex workflows. Skilled in integrating AI-driven automation tools with web technologies to develop solutions that optimize email management, social media engagement, and data processing. Experienced in prompt engineering and workflow orchestration using advanced AI platforms and no-code tools.</p>
-                <p><strong>Education:</strong> BS in Artificial Intelligence at National University of Sciences and Technology (NUST) Expected Graduation: 2028</p>
-            </div>
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">AI Projects</span>
+            <div class="about-preview-grid">
+
+                <!-- Stats -->
+                <div class="stats-grid reveal">
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">AI Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3.15</span>
+                        <span class="stat-label">GPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2028</span>
+                        <span class="stat-label">Graduation</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Leadership Roles</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">3.15</span>
-                    <span class="stat-label">GPA</span>
+
+                <!-- Text -->
+                <div class="about-preview-text reveal reveal-delay-2">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Agentic AI Developer<br>& AI Student at NUST</h2>
+                    <p>Passionate about building autonomous AI systems that enhance productivity and automate complex
+                        workflows. Skilled in integrating AI-driven automation tools with web technologies to develop
+                        solutions that optimize email management, social media engagement, and data processing.</p>
+                    <p>Experienced in prompt engineering and workflow orchestration using advanced AI platforms and
+                        no-code tools like n8n.</p>
+
+                    <div class="education-card">
+                        <span class="edu-icon">🏛️</span>
+                        <div class="edu-info">
+                            <h4>BS Artificial Intelligence — NUST SEECS</h4>
+                            <p>GPA 3.15 &nbsp;·&nbsp; Expected Graduation 2028 &nbsp;·&nbsp; Islamabad, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <a href="about.html" class="btn btn-ghost" id="about-learn-more-btn">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">2028</span>
-                    <span class="stat-label">Expected Graduation</span>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Services Preview Section -->
+    <!-- ======= SERVICES PREVIEW ======= -->
     <section class="services-section">
         <div class="container">
-            <h2 class="section-title">Services I Offer</h2>
+            <div class="section-inner reveal" style="text-align:center">
+                <span class="section-label" style="justify-content:center">What I Do</span>
+                <h2 class="section-title">Services I Offer</h2>
+                <p class="section-subtitle">From autonomous agents to full-stack web applications — I build solutions
+                    that make an impact.</p>
+            </div>
+
             <div class="services-grid">
-                <div class="service-card green">
-                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                <div class="service-card indigo reveal reveal-delay-1">
+                    <div class="service-icon-wrap"><i class="fas fa-robot"></i></div>
+                    <h3>Agentic AI Development</h3>
+                    <p>Building intelligent autonomous agents using modern LLMs (OpenAI, Claude) and Python-based
+                        orchestration frameworks.</p>
+                </div>
+
+                <div class="service-card cyan reveal reveal-delay-2">
+                    <div class="service-icon-wrap"><i class="fas fa-bolt"></i></div>
                     <h3>AI Automation</h3>
-                    <p>Building autonomous AI systems using n8n, prompt engineering, and LLM workflows to automate complex tasks.</p>
+                    <p>Streamlining business processes and social media management using n8n workflows and custom Python
+                        automation scripts.</p>
                 </div>
-                <div class="service-card cyan">
-                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+
+                <div class="service-card violet reveal reveal-delay-3">
+                    <div class="service-icon-wrap"><i class="fas fa-laptop-code"></i></div>
                     <h3>Full-Stack Development</h3>
-                    <p>Creating web applications using Java Spring Boot, MySQL, HTML/CSS/JavaScript for robust solutions.</p>
+                    <p>Developing scalable web applications using Java Spring Boot, MySQL, and modern frontend
+                        technologies.</p>
                 </div>
-                <div class="service-card purple">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Data Processing</h3>
-                    <p>Proficient in Python, Pandas, NumPy for data analysis, cleaning, and optimization.</p>
-                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+                <a href="services.html" id="view-all-services-btn" class="btn btn-ghost">
+                    View All Services <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ======= FOOTER ======= -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <div class="footer-inner">
+                <a href="index.html" class="footer-logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+                <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank"
+                        title="LinkedIn" id="footer-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub" id="footer-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:sikandarhussain6858358@gmail.com" title="Email" id="footer-email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <p>&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // ── Navbar scroll effect ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // ── Hamburger menu ──
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            navMenu.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                navMenu.classList.remove('open');
+            });
+        });
+
+        // ── Scroll Reveal ──
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ── Typing animation ──
+        const phrases = ['Agentic AI Developer', 'BS AI Student @ NUST', 'Automation Engineer', 'Full-Stack Builder'];
+        let pi = 0, ci = 0, deleting = false;
+        const typedEl = document.getElementById('typed-text');
+        function type() {
+            const phrase = phrases[pi];
+            typedEl.textContent = deleting ? phrase.substring(0, ci--) : phrase.substring(0, ci++);
+            let delay = deleting ? 60 : 110;
+            if (!deleting && ci > phrase.length) { delay = 1800; deleting = true; }
+            if (deleting && ci < 0) { deleting = false; pi = (pi + 1) % phrases.length; ci = 0; delay = 400; }
+            setTimeout(type, delay);
+        }
+        type();
+    </script>
+
 </body>
+
 </html>

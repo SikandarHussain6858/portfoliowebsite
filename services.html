@@ -1,110 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Muhammad Sikandar Hussain</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services offered by Muhammad Sikandar Hussain — Agentic AI development, automation, full-stack web, and data processing.">
+  <title>Services — Muhammad Sikandar Hussain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo">MSH</a>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="active"><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Services Section -->
-    <section class="services-section" style="padding-top: 8rem;">
-        <div class="container">
-            <h2 class="section-title">Services I Offer</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--text-light); font-size: 1.1rem;">
-                I provide comprehensive AI and software solutions tailored to meet modern business needs. From autonomous agents to full-stack applications, I ensure every project delivers exceptional results.
-            </p>
-            
-            <div class="services-grid">
-                <div class="service-card green">
-                    <div class="service-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Agentic AI Development</h3>
-                    <p>Building intelligent autonomous agents using modern LLMs (OpenAI, Claude) and Python-based orchestration frameworks.</p>
-                </div>
-                
-                <div class="service-card cyan">
-                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>AI Automation</h3>
-                    <p>Streamlining business processes and social media management using n8n workflows and custom Python automation scripts.</p>
-                </div>
-                
-                <div class="service-card purple">
-                    <div class="service-icon"><i class="fas fa-globe"></i></div>
-                    <h3>Full-Stack Development</h3>
-                    <p>Developing scalable web applications using Java Spring Boot, MySQL, and modern frontend technologies.</p>
-                </div>
-                
-                <div class="service-card green">
-                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
-                    <h3>Data Processing</h3>
-                    <p>Comprehensive data analysis, cleaning, and processing using industry-standard libraries like Pandas and NumPy.</p>
-                </div>
-                
-                <div class="service-card cyan">
-                    <div class="service-icon"><i class="fas fa-tools"></i></div>
-                    <h3>AI Tooling</h3>
-                    <p>Creating custom integrations and tools for AI platforms, prompt engineering, and LLM-powered application features.</p>
-                </div>
-                
-                <div class="service-card purple">
-                    <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h3>Consulting</h3>
-                    <p>Strategic technical guidance on AI implementation, cloud-based systems, and modern software architecture.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ======= NAVIGATION ======= -->
+  <nav id="navbar" class="scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+      <ul class="navigation" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Process Section -->
-    <section class="about-section">
-        <div class="container">
-            <h2 class="section-title">My Process</h2>
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">1</span>
-                    <span class="stat-label">Analysis & Discovery</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">System Architecture</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Agile Development</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Deployment & Support</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">What I Offer</span>
+      <h1 class="section-title">Services</h1>
+      <p class="section-subtitle">Comprehensive AI and software solutions tailored to modern business needs — from autonomous agents to full-stack applications.</p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+  <!-- ======= SERVICES GRID ======= -->
+  <section class="services-section" style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
+
+        <div class="service-card indigo reveal reveal-delay-1">
+          <div class="service-icon-wrap"><i class="fas fa-robot"></i></div>
+          <h3>Agentic AI Development</h3>
+          <p>Building intelligent autonomous agents using modern LLMs (OpenAI, Claude) and Python-based orchestration frameworks that can reason, plan, and act independently.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-indigo); margin-right:6px;"></i>LLM-powered agents</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-indigo); margin-right:6px;"></i>Multi-agent orchestration</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-indigo); margin-right:6px;"></i>Tool use &amp; memory systems</li>
+          </ul>
         </div>
-    </footer>
+
+        <div class="service-card cyan reveal reveal-delay-2">
+          <div class="service-icon-wrap"><i class="fas fa-bolt"></i></div>
+          <h3>AI Automation</h3>
+          <p>Streamlining business processes and social media management using n8n workflows and custom Python automation scripts to eliminate repetitive tasks.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>n8n workflow design</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>Email &amp; social automation</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>API integrations</li>
+          </ul>
+        </div>
+
+        <div class="service-card violet reveal reveal-delay-3">
+          <div class="service-icon-wrap"><i class="fas fa-globe"></i></div>
+          <h3>Full-Stack Development</h3>
+          <p>Developing scalable web applications using Java Spring Boot, MySQL, and modern frontend technologies that deliver robust, maintainable solutions.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-violet); margin-right:6px;"></i>Java Spring Boot backend</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-violet); margin-right:6px;"></i>MySQL database design</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-violet); margin-right:6px;"></i>Responsive front-ends</li>
+          </ul>
+        </div>
+
+        <div class="service-card green reveal reveal-delay-1">
+          <div class="service-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data Processing</h3>
+          <p>Comprehensive data analysis, cleaning, and processing using industry-standard libraries like Pandas and NumPy for actionable insights.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:6px;"></i>Data cleaning &amp; EDA</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:6px;"></i>Pipeline automation</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:6px;"></i>Excel &amp; Sheets integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card pink reveal reveal-delay-2">
+          <div class="service-icon-wrap"><i class="fas fa-tools"></i></div>
+          <h3>AI Tooling &amp; Integration</h3>
+          <p>Creating custom integrations and tools for AI platforms, prompt engineering solutions, and LLM-powered application features.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-pink); margin-right:6px;"></i>Prompt engineering</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-pink); margin-right:6px;"></i>Custom AI tooling</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-pink); margin-right:6px;"></i>Third-party API wrappers</li>
+          </ul>
+        </div>
+
+        <div class="service-card teal reveal reveal-delay-3">
+          <div class="service-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+          <h3>Technical Consulting</h3>
+          <p>Strategic technical guidance on AI implementation, automation architecture, and modern software solutions to help you make the right decisions.</p>
+          <ul style="margin-top:1rem; padding-left:0; list-style:none;">
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>AI strategy &amp; roadmapping</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>Tech stack selection</li>
+            <li style="font-size:0.83rem; color:var(--text-muted); padding:3px 0;"><i class="fas fa-check-circle" style="color:var(--accent-cyan); margin-right:6px;"></i>Architecture review</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROCESS ======= -->
+  <section class="process-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content:center">How I Work</span>
+        <h2 class="section-title">My Process</h2>
+        <p class="section-subtitle">A clear, collaborative approach to every project — from discovery to delivery.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-num">1</div>
+          <h3>Discovery</h3>
+          <p>Understanding your goals, constraints, and the problem space through deep research and conversations.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-num">2</div>
+          <h3>Architecture</h3>
+          <p>Designing the right system architecture, selecting optimal tools and frameworks for your specific needs.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-num">3</div>
+          <h3>Development</h3>
+          <p>Agile, iterative development with continuous feedback — building, testing, and refining incrementally.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-num">4</div>
+          <h3>Delivery</h3>
+          <p>Clean handoff with documentation, deployment support, and post-launch assistance to ensure success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Let's discuss how I can help you build something amazing with AI and modern technology.</p>
+      <a href="contact.html" id="services-cta-btn" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+        <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open'); navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+      hamburger.classList.remove('open'); navMenu.classList.remove('open');
+    }));
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
+
 </body>
 </html>

@@ -1,86 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Muhammad Sikandar Hussain</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Muhammad Sikandar Hussain — Agentic AI Developer. Send a message or connect on LinkedIn and GitHub.">
+  <title>Contact — Muhammad Sikandar Hussain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo">MSH</a>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Portfolio</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Contact Section -->
-    <section class="contact-section" style="padding-top: 8rem;">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--text-light); font-size: 1.1rem;">
-                Have a project in mind or just want to say hello? Feel free to reach out. I'd love to hear from you!
+  <!-- ======= NAVIGATION ======= -->
+  <nav id="navbar" class="scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+      <ul class="navigation" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Say Hello</span>
+      <h1 class="section-title">Get In Touch</h1>
+      <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info Panel -->
+        <div class="contact-info-panel reveal">
+          <h3>Let's Build Something Great</h3>
+          <p>Whether you have a project idea, a question about my services, or just want to connect — my inbox is always open.</p>
+
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <span class="label">Email</span>
+                <a href="mailto:sikandarhussain6858358@gmail.com" class="value" style="text-decoration:none; color:var(--text-primary);">
+                  sikandarhussain6858358@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" style="background:var(--grad-cyan);">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <span class="label">Phone / WhatsApp</span>
+                <span class="value">+92 310 6858358</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" style="background:var(--grad-green);">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info-text">
+                <span class="label">Location</span>
+                <span class="value">Islamabad, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" style="background:var(--grad-pink);">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="contact-info-text">
+                <span class="label">University</span>
+                <span class="value">NUST — SEECS, Islamabad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <p style="font-size:0.8rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.85rem;">Connect With Me</p>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" id="contact-linkedin" class="social-pill">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/SikandarHussain6858" target="_blank" id="contact-github" class="social-pill">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:sikandarhussain6858358@gmail.com" id="contact-email-pill" class="social-pill">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+
+          <!-- Availability notice -->
+          <div style="margin-top:2rem; padding:1.1rem 1.25rem; background:rgba(52,211,153,0.08); border:1px solid rgba(52,211,153,0.2); border-radius:var(--radius-md);">
+            <p style="font-size:0.88rem; color:var(--accent-green); display:flex; align-items:center; gap:8px; margin:0;">
+              <i class="fas fa-circle" style="font-size:0.55rem; animation:blink 1.5s ease-in-out infinite;"></i>
+              <strong>Available for projects</strong> — Typically responds within 24 hours.
             </p>
-            
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                </form>
-                
-                <div class="contact-info">
-                    <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
-                    <div class="contact-item">
-                        <strong><i class="fas fa-envelope"></i> Email:</strong> sikandarhussain6858358@gmail.com
-                    </div>
-                    <div class="contact-item">
-                        <strong><i class="fas fa-phone"></i> Phone:</strong> +92 310 6858358
-                    </div>
-                    <div class="contact-item">
-                        <strong><i class="fas fa-location-dot"></i> Location:</strong> Islamabad, Pakistan
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <h3>Send Me a Message</h3>
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Muhammad Ali" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
             </div>
-            <p>&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration / AI Automation..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service (optional)</option>
+                <option value="agentic-ai">Agentic AI Development</option>
+                <option value="ai-automation">AI Automation</option>
+                <option value="fullstack">Full-Stack Development</option>
+                <option value="data">Data Processing</option>
+                <option value="consulting">Technical Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project, goals, or any questions you have..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="form-success" style="display:none; margin-top:1rem; padding:1rem; background:rgba(52,211,153,0.1); border:1px solid rgba(52,211,153,0.3); border-radius:var(--radius-sm); text-align:center;">
+              <p style="color:var(--accent-green); font-weight:600; margin:0;">
+                <i class="fas fa-check-circle"></i> &nbsp; Message sent! I'll get back to you soon.
+              </p>
+            </div>
+          </form>
         </div>
-    </footer>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+        <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open'); navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+      hamburger.classList.remove('open'); navMenu.classList.remove('open');
+    }));
+
+    // Scroll reveal
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Form demo submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit-btn');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('form-success').style.display = 'block';
+        btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+        btn.style.background = 'var(--grad-green)';
+      }, 1500);
+    }
+
+    // Style the select to match theme
+    const select = document.getElementById('service');
+    select.style.cssText = select.style.cssText + '-webkit-appearance:none; appearance:none;';
+  </script>
+
 </body>
 </html>

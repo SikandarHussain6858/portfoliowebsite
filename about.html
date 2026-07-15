@@ -1,105 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Muhammad Sikandar Hussain</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Muhammad Sikandar Hussain — Agentic AI Developer at NUST. Skills, education, and leadership experience.">
+  <title>About — Muhammad Sikandar Hussain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo">MSH</a>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Agentic AI Developer passionate about building autonomous AI systems that enhance productivity and automate complex workflows. Skilled in integrating AI-driven automation tools with web technologies to develop solutions that optimize email management, social media engagement, and data processing. Experienced in prompt engineering and workflow orchestration using advanced AI platforms and no-code tools.</p>
-                <br>
-                <p><strong>Education:</strong> Currently pursuing BS in Artificial Intelligence at National University of Sciences and Technology (NUST-SEECS) with a GPA of 3.15. Expected graduation in 2028. Relevant coursework includes Fundamentals of Computer Programming, Object-Oriented Programming, ICT Applications, and Database Systems.</p>
-                <br>
-                <p><strong>Leadership & Involvement:</strong> I've served as Project Lead for the Remote Patient Monitoring System, Executive Member at NUST Entrepreneurship Club managing event logistics, and Executive Member at TABA Youth Chapter handling digital content and social media management.</p>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">3.15</span>
-                    <span class="stat-label">GPA</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">AI & Academic Projects</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2028</span>
-                    <span class="stat-label">Expected Graduation</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ======= NAVIGATION ======= -->
+  <nav id="navbar" class="scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+      <ul class="navigation" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Skills Section -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="services-grid">
-                <div class="service-card green">
-                    <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3>Programming Languages</h3>
-                    <p>C++, Java, SQL, Python - Building robust applications and algorithms.</p>
-                </div>
-                <div class="service-card cyan">
-                    <div class="service-icon"><i class="fas fa-toolbox"></i></div>
-                    <h3>Tools & Platforms</h3>
-                    <p>MySQL, Git, Jupyter, Pandas, NumPy, n8n for development and automation.</p>
-                </div>
-                <div class="service-card purple">
-                    <div class="service-icon"><i class="fas fa-brain"></i></div>
-                    <h3>AI & Automation</h3>
-                    <p>Prompt engineering with ChatGPT and LLMs, workflow orchestration using n8n.</p>
-                </div>
-                <div class="service-card green">
-                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>Data Processing</h3>
-                    <p>Fast typing (50+ WPM), data cleaning & formatting in Excel and Google Sheets.</p>
-                </div>
-                <div class="service-card cyan">
-                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Java Spring Boot, HTML, CSS, JavaScript, MySQL for full-stack applications.</p>
-                </div>
-                <div class="service-card purple">
-                    <div class="service-icon"><i class="fas fa-microchip"></i></div>
-                    <h3>Software Engineering</h3>
-                    <p>OOP, JavaFX, dynamic memory management, file handling, and algorithm design.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Get to Know Me</span>
+      <h1 class="section-title">About Me</h1>
+      <p class="section-subtitle">Agentic AI Developer &amp; BS AI Student at NUST-SEECS building autonomous systems that matter.</p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  <!-- ======= ABOUT MAIN ======= -->
+  <section class="about-main">
+    <div class="container">
+      <div class="about-layout">
+
+        <!-- Photo Column -->
+        <div class="about-photo-col reveal">
+          <div class="about-photo-wrap">
+            <img src="IMG-20241215-WA0146.jpg" alt="Muhammad Sikandar Hussain">
+            <div class="about-photo-overlay">
+              <p><i class="fas fa-map-marker-alt"></i> <strong>Islamabad, Pakistan</strong></p>
             </div>
-            <p>&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+          </div>
         </div>
-    </footer>
+
+        <!-- Text Column -->
+        <div class="about-text-col">
+          <span class="section-label reveal">My Story</span>
+          <h2 class="section-title reveal">Passionate About<br>Intelligent Systems</h2>
+
+          <div class="reveal reveal-delay-1">
+            <p>I'm an Agentic AI Developer passionate about building autonomous AI systems that enhance productivity and automate complex workflows. My work sits at the intersection of Artificial Intelligence, software engineering, and real-world problem solving.</p>
+            <p>I'm skilled in integrating AI-driven automation tools with web technologies to develop solutions that optimize email management, social media engagement, and data processing pipelines. I love turning complex challenges into elegant, automated solutions.</p>
+            <p>Experienced in prompt engineering and workflow orchestration using advanced AI platforms including OpenAI and Claude APIs, as well as no-code orchestration tools like n8n.</p>
+          </div>
+
+          <!-- Education Card -->
+          <div class="glass-card reveal reveal-delay-2" style="padding:1.5rem; margin-top:1.5rem;">
+            <div style="display:flex; align-items:flex-start; gap:1rem;">
+              <div style="font-size:2rem; flex-shrink:0;">🏛️</div>
+              <div>
+                <h3 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:600; color:var(--text-primary); margin-bottom:0.35rem;">BS Artificial Intelligence</h3>
+                <p style="color:var(--accent-cyan); font-size:0.9rem; font-weight:500; margin-bottom:0.5rem;">NUST — National University of Sciences &amp; Technology (SEECS)</p>
+                <p style="color:var(--text-secondary); font-size:0.85rem; margin-bottom:0.75rem;">GPA: 3.15 &nbsp;·&nbsp; Expected Graduation: 2028 &nbsp;·&nbsp; Islamabad, Pakistan</p>
+                <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+                  <span class="tag">Object-Oriented Programming</span>
+                  <span class="tag cyan">Database Systems</span>
+                  <span class="tag violet">ICT Applications</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;" class="reveal reveal-delay-3">
+            <a href="contact.html" id="about-contact-btn" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Get in Touch
+            </a>
+            &nbsp;
+            <a href="projects.html" id="about-projects-btn" class="btn btn-ghost" style="margin-top:0.5rem">
+              <i class="fas fa-folder-open"></i> My Projects
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="skills-section">
+    <div class="container">
+      <div style="text-align:center;" class="reveal">
+        <span class="section-label" style="justify-content:center">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">A snapshot of my technical proficiencies across AI, development, and data tooling.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category reveal reveal-delay-1">
+          <h3><i class="fas fa-code" style="color:var(--accent-indigo); margin-right:8px;"></i>Programming Languages</h3>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Python</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Java</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>C++</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>SQL</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>HTML / CSS / JS</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Tools -->
+        <div class="skill-category reveal reveal-delay-2">
+          <h3><i class="fas fa-brain" style="color:var(--accent-violet); margin-right:8px;"></i>AI &amp; Frameworks</h3>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Prompt Engineering / LLMs</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill cyan-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>n8n Automation</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill cyan-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Pandas / NumPy</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill cyan-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Java Spring Boot</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill cyan-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>MySQL / Databases</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill cyan-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tech tag cloud -->
+      <div style="margin-top:3rem; text-align:center;" class="reveal">
+        <p style="color:var(--text-muted); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:1rem;">Additional Tools</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.6rem; justify-content:center;">
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag cyan">Jupyter Notebook</span>
+          <span class="tag">JavaFX</span>
+          <span class="tag violet">OpenAI API</span>
+          <span class="tag">Claude API</span>
+          <span class="tag green">Excel / Google Sheets</span>
+          <span class="tag">MySQL Workbench</span>
+          <span class="tag cyan">n8n Workflows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= LEADERSHIP ======= -->
+  <section class="leadership-section">
+    <div class="container">
+      <div style="text-align:center;" class="reveal">
+        <span class="section-label" style="justify-content:center">Impact Beyond Code</span>
+        <h2 class="section-title">Leadership &amp; Involvement</h2>
+        <p class="section-subtitle">I believe great developers are also great collaborators. Here's where I lead.</p>
+      </div>
+
+      <div class="leadership-grid">
+        <div class="glass-card leadership-card reveal reveal-delay-1">
+          <span class="role-badge indigo">Project Lead</span>
+          <h3>Remote Patient Monitoring System</h3>
+          <p class="org">NUST Academic Project</p>
+          <p>Led the design and development of a Java Spring Boot cloud-based application for real-time patient monitoring and healthcare data management, coordinating a cross-functional team.</p>
+        </div>
+
+        <div class="glass-card leadership-card reveal reveal-delay-2">
+          <span class="role-badge cyan">Executive Member</span>
+          <h3>NUST Entrepreneurship Club</h3>
+          <p class="org">NUST — SEECS Campus</p>
+          <p>Managed event logistics and coordinated workshops that connected students with industry professionals, fostering an entrepreneurial mindset within the university community.</p>
+        </div>
+
+        <div class="glass-card leadership-card reveal reveal-delay-3">
+          <span class="role-badge violet">Executive Member</span>
+          <h3>TABA Youth Chapter</h3>
+          <p class="org">Digital Media &amp; Content</p>
+          <p>Handled digital content creation and social media management for the youth chapter, growing online engagement and brand visibility across multiple platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo">MSH<span style="color:var(--accent-cyan)">.</span></a>
+        <p class="footer-copy">&copy; 2026 Muhammad Sikandar Hussain. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/muhammad-sikandar-hussain-0840632b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/SikandarHussain6858" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sikandarhussain6858358@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+      hamburger.classList.remove('open'); navMenu.classList.remove('open');
+    }));
+
+    // Scroll reveal
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Skill bars
+    const barObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting) {
+          e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skill-category').forEach(el => barObs.observe(el));
+  </script>
+
 </body>
 </html>
