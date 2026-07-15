@@ -930,7 +930,16 @@ footer {
   .hamburger { display:flex; }
 
   .hero-grid { text-align:center; }
-  .hero-float-card { position:static; margin:1.5rem auto 0; width:fit-content; }
+  .hero-float-card { 
+    position:relative; 
+    margin: -2rem auto 2rem; 
+    width: fit-content; 
+    max-width: 90%;
+    z-index: 10;
+    text-align: left;
+  }
+  .hero-float-card .text { font-size: .75rem; }
+  .hero-float-card .text strong { font-size: .85rem; }
 
   .services-grid, .proj-grid, .lead-grid { grid-template-columns:1fr; }
   .process-steps { grid-template-columns:1fr; }
